@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#f5f5f5"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/gymsTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gyms_in_your_area"
+        android:textSize="28sp"
+        android:textColor="#4CAF50"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:id="@+id/nutritionCentersSubtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_gym_for_more_details"
+        android:textSize="16sp"
+        android:textColor="#777"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+    <ListView
+        android:id="@+id/gymsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#e0e0e0"
+        android:dividerHeight="1dp"
+        android:padding="16dp"
+        android:background="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F1F8E9"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calorie_calculator"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#388E3C"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"/>
+
+
+    <TextView
+        android:id="@+id/gramsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_number_of_grams"
+        android:textSize="18sp"
+        android:textColor="#388E3C"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/gramsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/grams"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="#81C784"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"/>
+
+    <ListView
+        android:id="@+id/foodListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#388E3C"
+        android:onClick="calculateCalories"
+        android:padding="16dp"
+        android:text="@string/calculate_calories"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/calorieResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_calories_0"
+        android:textSize="22sp"
+        android:textColor="#388E3C"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"/>
+
+</LinearLayout>
